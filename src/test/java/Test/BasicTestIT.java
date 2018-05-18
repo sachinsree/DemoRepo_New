@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 //import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.htmlunit.*; 
+import org.openqa.selenium.htmlunit.*;
 
 public class BasicTestIT {
   @Test
@@ -16,7 +16,7 @@ public class BasicTestIT {
 	 // WebDriver	driver = new ChromeDriver();
 	 //WebDriver	driver = new FirefoxDriver();
 	 WebDriver	driver = new HtmlUnitDriver();
-	  driver.get("http://localhost:8092/retailone/");
+	  driver.get("http://localhost:8092/retailone/sree");
 	  Assert.assertEquals("Retail Application Demo", driver.getTitle());
 	  driver.close();
   }
